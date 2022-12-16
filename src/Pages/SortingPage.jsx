@@ -40,7 +40,7 @@ const SortingPage = () => {
         <p>Loading....</p>
       </div>
     )
-  } else if(params.sortingType === undefined) { 
+  } else if(params.sortingType === undefined || currentMeaning === null) { 
     return (
       <React.Fragment>
         <NavigationBar />
