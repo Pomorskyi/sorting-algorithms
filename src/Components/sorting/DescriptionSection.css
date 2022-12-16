@@ -1,0 +1,31 @@
+@import '../../App.css';
+
+.algorithm_description {
+  font-size: larger;
+  color: var(--font-primary);
+}
+
+.algorithm_description .description_list_underlined{
+  padding: .2rem .4rem;
+  background-color: var(--description-code-bg-color) !important;
+  color: var(--description-code-color) !important;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.algorithm_description ul {
+  margin-left: 2rem;
+}
+
+.algorithm_description ul > li {
+  line-height: 3rem;
+}
+
+.algorithm_description .code{
+  background-color: var(--description-code-bg-color) !important;
+  color: var(--description-code-color) !important;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  line-height: 22px;
+  font-size: 18px;
+  font-family: 'Courier New', monospace;
+  padding: 1.5rem;
+}

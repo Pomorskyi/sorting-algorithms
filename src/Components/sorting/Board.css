@@ -1,0 +1,57 @@
+@import '../../App.css';
+
+.centrify {
+  display: flex;
+  justify-content: center;
+}
+
+.boardScale {
+  margin-right: .3rem;
+  font-size: 14px;
+  position: absolute;
+  left: 230px;
+  height: 400px;
+  color: var(--font-primary);
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.boardScale > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.table {
+  position: absolute;
+  left: 260px;
+  top: 0px;
+  max-width: 800px;
+  max-height: 400px;
+  margin: 0;
+  padding: 0;
+  /* background-color: antiquewhite; */
+}
+
+.table td, th {
+  border: 1px solid #999;
+  text-align: left;
+}
+
+.table-row {
+  height: 20px !important;
+}
+
+.sortingBoard {
+  position: absolute;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.containerRelative {
+  position: relative;
+}

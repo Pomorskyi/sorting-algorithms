@@ -1,0 +1,10 @@
+@import '../App.css';
+
+.sortingPage {
+  padding-top: 1rem;
+  color: var(--font-primary);
+}
+
+/* .sortingPage h3 {
+
+} */

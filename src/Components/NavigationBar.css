@@ -1,0 +1,17 @@
+@import '../App.css';
+
+.navbar_theming {
+  background-color: var(--bg-color-secondary);
+  color: var(--font-primary) !important;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav-link, .dropdown-toggle {
+  color: var(--font-primary) !important;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.theming_change_btn{
+  color: var(--font-primary) !important;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}

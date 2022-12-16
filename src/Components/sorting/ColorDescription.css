@@ -1,0 +1,16 @@
+@import '../../App.css';
+
+.colorMeaning{
+  display: flex;
+  flex-direction: row;
+  margin-top: .5rem;
+}
+
+.colorMeaning .colorCell {
+  min-width: 30px;
+  height: 30px;
+  border-radius: 25%;
+  margin-right: .5rem;
+  border: 1px solid var(--font-secondary);
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}

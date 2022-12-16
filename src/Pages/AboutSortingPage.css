@@ -1,0 +1,7 @@
+@import '../App.css';
+
+.aboutSorting{
+  padding-top: 2rem;
+  color: var(--font-primary);
+  font-size: larger;
+}

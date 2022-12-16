@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
+import {
+  Routes,
+  Route
+} from "react-router-dom";
 import './App.css';
+import { ThemeContextProvider } from './Contextes/ThemeContext'
+import { Container } from 'react-bootstrap';
+import SortingPage from './Pages/SortingPage';
+import { CookiesProvider } from 'react-cookie';
+import Footer from './Components/Footer';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CookiesProvider>
+      <ThemeContextProvider>
+        <Routes>
+          <Route path='/' element={<SortingPage />} />
+          <Route path='/:sortingType' element={<SortingPage />} />
+        </Routes>
+        <Container fluid>
+          <Footer />
+        </Container>
+      </ThemeContextProvider>
+    </CookiesProvider>
   );
 }
 
