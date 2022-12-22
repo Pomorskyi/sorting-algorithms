@@ -6,14 +6,20 @@ import { Container } from 'react-bootstrap'
 import SortingPage from './Pages/SortingPage'
 import { CookiesProvider } from 'react-cookie'
 import Footer from './Components/Footer'
+import NavigationBar from './Components/NavigationBar'
 
 function App() {
   return (
     <CookiesProvider>
       <ThemeContextProvider>
+        <NavigationBar />
         <Routes>
-          <Route path='/' exact element={<SortingPage />} />
-          <Route path='/:sortingType' element={<SortingPage />} />
+          <Route path='/sorting-algorithms' exact element={<SortingPage />} />
+          <Route
+            path='/sorting-algorithms/:sorting-type'
+            exact
+            element={<SortingPage />}
+          />
         </Routes>
         <Container fluid>
           <Footer />
