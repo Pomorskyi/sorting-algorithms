@@ -13,7 +13,7 @@ function App() {
       <ThemeContextProvider>
         <Routes>
           <Route path='/' exact element={<SortingPage />} />
-          <Route path='/:sortingType' exact element={<SortingPage />} />
+          <Route path='/:sortingType' element={<SortingPage />} />
         </Routes>
         <Container fluid>
           <Footer />
