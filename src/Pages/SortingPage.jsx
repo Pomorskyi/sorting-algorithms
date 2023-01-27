@@ -1,8 +1,8 @@
-import React, { useEffect, useMemo, useState } from "react";
-import { Container } from "react-bootstrap";
-import { useParams } from "react-router-dom";
-import Board from "../Components/sorting/Board";
-import ColorDescription from "../Components/sorting/ColorDescription";
+import React, { useEffect, useMemo, useState } from 'react';
+import { Container } from 'react-bootstrap';
+import { useParams } from 'react-router-dom';
+import Board from '../Components/sorting/Board';
+import ColorDescription from '../Components/sorting/ColorDescription';
 import {
   size,
   iteratorColor,
@@ -11,10 +11,10 @@ import {
   cof,
   maxHeight,
   getMeaningByPath,
-} from "../Components/sorting/SortingMetadata";
-import useBoard from "../Components/sorting/useBoardHook";
-import "./SortingPage.css";
-import "../Components/sorting/DescriptionSection.css";
+} from '../Components/sorting/SortingMetadata';
+import useBoard from '../Components/sorting/useBoardHook';
+import './SortingPage.css';
+import '../Components/sorting/DescriptionSection.css';
 
 const SortingPage = () => {
   const params = useParams();
@@ -45,14 +45,14 @@ const SortingPage = () => {
         <div className="row">
           <Board />
           <div className="row">
-            <div style={{ height: "450px" }}></div>
+            <div style={{ height: '450px' }}></div>
           </div>
           <div className="row">
             <div className="col-8">
               <div className="algorithm_description">{description}</div>
             </div>
             <div className="col-4">
-              <h3 style={{ marginBottom: "2rem" }}>Agenda</h3>
+              <h3 style={{ marginBottom: '2rem' }}>Agenda</h3>
               <ColorDescription
                 color={iteratorColor}
                 meaning={currentMeaning.iteratorColor}

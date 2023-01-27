@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-import { ThemeContext } from "../Contextes/ThemeContext";
-import useBoard from "./sorting/useBoardHook";
-import "./NavigationBar.css";
+import React, { useContext } from 'react';
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+import { ThemeContext } from '../Contextes/ThemeContext';
+import useBoard from './sorting/useBoardHook';
+import './NavigationBar.css';
 
 const NavigationBar = () => {
   const { navTitle } = useBoard();
@@ -15,35 +15,25 @@ const NavigationBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <NavDropdown title={navTitle} id="basic-nav-dropdown">
-              <NavDropdown.Item href="/sorting-algorithms/selection-sort">
+              <NavDropdown.Item href="/selection-sort">
                 Selection sort
               </NavDropdown.Item>
-              <NavDropdown.Item href="/sorting-algorithms/bubble-sort">
+              <NavDropdown.Item href="/bubble-sort">
                 Bubble sort
               </NavDropdown.Item>
-              <NavDropdown.Item href="/sorting-algorithms/insertion-sort">
+              <NavDropdown.Item href="/insertion-sort">
                 Insertion sort
               </NavDropdown.Item>
-              <NavDropdown.Item href="/sorting-algorithms/merge-sort">
-                Merge sort
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/sorting-algorithms/quick-sort">
-                Quick sort
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/sorting-algorithms/heap-sort">
-                Heap sort
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/sorting-algorithms/counting-sort">
+              <NavDropdown.Item href="/merge-sort">Merge sort</NavDropdown.Item>
+              <NavDropdown.Item href="/quick-sort">Quick sort</NavDropdown.Item>
+              <NavDropdown.Item href="/heap-sort">Heap sort</NavDropdown.Item>
+              <NavDropdown.Item href="/counting-sort">
                 Counting sort
               </NavDropdown.Item>
-              <NavDropdown.Item href="/sorting-algorithms/radix-sort">
-                Radix sort
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/radix-sort">Radix sort</NavDropdown.Item>
 
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/sorting-algorithms/">
-                About sorting
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/">About sorting</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
@@ -53,7 +43,7 @@ const NavigationBar = () => {
               type="checkbox"
               onChange={onChangeTheme}
               defaultChecked={darkActive}
-            />{" "}
+            />{' '}
             isDark
           </Navbar.Text>
         </Navbar.Collapse>

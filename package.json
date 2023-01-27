@@ -1,6 +1,5 @@
 {
   "name": "sorting-algorithms",
-  "homepage": "https://pomorskyi.github.io/sorting-algorithms",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
