@@ -46,6 +46,7 @@
 }
 
 .sortingBoard {
+  left: 260px;
   position: absolute;
   height: 400px;
   display: flex;
@@ -54,4 +55,32 @@
 
 .containerRelative {
   position: relative;
+}
+
+@media only screen and (max-width: 1399px) {
+  .sortingBoard {
+    left: 200px;
+  }
+  .table {
+    left: 200px;
+  }
+  .boardScale {
+    left: 170px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .sortingBoard {
+    left: 100px;
+  }
+  .table {
+    left: 100px;
+  }
+  .boardScale {
+    left: 70px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  
 }

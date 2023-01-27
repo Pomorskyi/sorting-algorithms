@@ -22,7 +22,9 @@ const SortingPage = () => {
   const { filling, description } = useBoard();
 
   const currentMeaning = useMemo(() => {
-    return getMeaningByPath(params.sortingType);
+    const curMeaning = getMeaningByPath(params.sortingType);
+    document.title = curMeaning.name;
+    return curMeaning;
   }, [params.sortingType]);
 
   useEffect(() => {
@@ -44,14 +46,19 @@ const SortingPage = () => {
       <Container className="sortingPage">
         <div className="row">
           <Board />
-          <div className="row">
+          <div className="row d-none d-lg-block">
             <div style={{ height: '450px' }}></div>
           </div>
+          <div className="row d-block d-lg-none">
+            <div style={{ margin: '2em 0', color: 'red' }}>
+              To see visualisation open on desktop...
+            </div>
+          </div>
           <div className="row">
-            <div className="col-8">
+            <div className="col-12 col-lg-8">
               <div className="algorithm_description">{description}</div>
             </div>
-            <div className="col-4">
+            <div className="d-none d-lg-block col-4">
               <h3 style={{ marginBottom: '2rem' }}>Agenda</h3>
               <ColorDescription
                 color={iteratorColor}
